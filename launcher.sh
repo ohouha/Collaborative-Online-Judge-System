@@ -3,10 +3,10 @@ fuser -k 3000/tcp   #kill all the apps using localhost:3000
 fuser -k 5000/tcp
 
 service redis_6379 start
-cd ./oj-server
+cd ./ohouha-oj-server
 npm install
-nodemon server.js &     #&means running at backend
-cd ../oj-client
+nodemon server.js &  
+cd ../ohouha-oj-client
 npm install
 ng build --watch &
 cd ../executor
